@@ -29,3 +29,31 @@ toggleButton.addEventListener('click', function () {
 const pDiv2Text = document.getElementById('pDiv2Text');
 pDiv2Text.style.color = 'blue';
 pDiv2Text.style.backgroundColor = 'yellow';
+
+// CREATING AND ADDING ELEMENTS
+// Creating a new element:
+const p1 = document.createElement('p');
+console.log(p1);
+
+// Setting attributes and content for the new element:
+p1.setAttribute('id', 'p1');
+p1.textContent = 'Here is p1, added to the new div attribute through JS';
+console.log(p1);
+
+// Appending the new element to the DOM:
+const div4 = document.getElementById('div4');
+div4.appendChild(p1);
+console.log(div4, p1);
+
+// Inserting a new element at a specific position:
+const p2 = document.getElementById('p2');
+div4.insertBefore(p1, p2);
+
+p1.textContent = 'Here is p1, added to the new div attribute through JS. UPDATE: Successfully moved above p2';
+console.log(p1.textContent);
+
+// Removing an element:
+const pDiv3Text = document.getElementById('pDiv3Text');
+const div3 = document.getElementById('div3');
+div3.removeChild(pDiv3Text);
+console.log(div3);
