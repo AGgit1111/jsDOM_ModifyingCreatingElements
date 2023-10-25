@@ -2,16 +2,29 @@
 <html>
 
     <head>
+        <link rel="stylesheet" href="styles.css">
         <title>DOM: Modifying and Creating Elements</title>
     </head>
 
     <body>
         <h2>Modifying Elements</h2>
         <p id="pDescription">Here's some text to modify</p>
+        
         <div class="div1">
             <p id="pDiv1Text">Here's some pDiv1Text to modify</p>
         </div>
 
-        <script src="script.js"></script>    
+        <div class="div2">
+            <p id="pDiv2Text">Here's some div2 text to modify color from JS</p>
+        </div>
+
+        <div id="div3" class="div3Class">
+            <p id="pDiv3Text">Here's some div3 text to modify</p>
+        </div>
+
+        <button id="toggleButton">Toggle Menu</button>
+        <div id="menu" class="hidden">This is the menu content</div>
+
+        <script src="script.js"></script>
     </body>
 </html>
